@@ -1,0 +1,27 @@
+id = "mr"
+title = "Modern Robotics: Mechanics, Planning, and Control"
+authors = "Kevin M. Lynch and Frank C. Park"
+pdf = "Examples/MR.pdf"
+license = "Preprint for personal use only; Cambridge University Press, 2017"
+
+# Chapter numbers are not in the bookmark titles: count chapters, letter appendices.
+numbering = "derive"
+front_titles = ["Foreword by Roger Brockett", "Foreword by Matthew Mason", "Preface"]
+appendix_titles = [
+    "Summary of Useful Formulas",
+    "Other Representations of Rotations",
+    "Denavit–Hartenberg Parameters",
+    "Optimization and Lagrange Multipliers",
+]
+back_titles = ["Bibliography", "Index"]
+# Chapters that preview later material: nothing is "defined" there.
+overview_chapters = ["1"]
+
+exercise_titles = '^(Exercises|Quiz|Revision Questions|Problems)$'
+reference_titles = '^(Notes and References|References|Bibliography|Index|Further Reading)$'
+# Recaps and the per-chapter Software sections (function docs) restate earlier
+# material: nothing is "defined" there.
+recap_titles = '^(Summary|Chapter Summary|Software)$'
+
+math_fonts = '^(CMMI|CMSY|CMEX|MSBM|MSAM|EUFM|EUSM|CMBSY|CMMIB|LINE|LASY)'
+code_fonts = '^(CMTT|Courier)'

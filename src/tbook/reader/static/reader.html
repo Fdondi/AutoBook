@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AutoBook</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 2h5a2 2 0 0 1 2 2v10a1.5 1.5 0 0 0-1.5-1.5H2zM14 2H9.5' fill='%233b6fd6'/%3E%3Cpath d='M14 2H9a2 2 0 0 0-2 2v10a1.5 1.5 0 0 1 1.5-1.5H14z' fill='%2393b4f0'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/vendor/pdfjs/legacy/web/pdf_viewer.css">
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<link rel="stylesheet" href="/static/reader.css">
+</head>
+<body>
+<header id="toolbar">
+  <div class="group">
+    <button id="outlineBtn" class="icon" title="Contents" aria-label="Contents" aria-pressed="false">
+      <svg viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14"/></svg></button>
+    <a href="/" class="icon" title="Library" aria-label="Library">
+      <svg viewBox="0 0 20 20"><path d="M4 3h4v14H4zM10 3h3v14h-3zM14.5 3.5l2.8.7-3 13.2-2.8-.7z"/></svg></a>
+    <span id="bookTitle" class="title"></span>
+  </div>
+  <div class="group center">
+    <button id="prevBtn" class="icon" title="Previous page" aria-label="Previous page">
+      <svg viewBox="0 0 20 20"><path d="M12.5 4.5 7 10l5.5 5.5"/></svg></button>
+    <input id="pageInput" type="text" inputmode="numeric" aria-label="Page" autocomplete="off">
+    <span id="pageCount" class="muted"></span>
+    <button id="nextBtn" class="icon" title="Next page" aria-label="Next page">
+      <svg viewBox="0 0 20 20"><path d="M7.5 4.5 13 10l-5.5 5.5"/></svg></button>
+    <span class="sep"></span>
+    <button id="zoomOut" class="icon" title="Zoom out (Ctrl −)" aria-label="Zoom out">
+      <svg viewBox="0 0 20 20"><path d="M5 10h10"/></svg></button>
+    <select id="zoomSelect" aria-label="Zoom">
+      <option value="auto">Automatic</option>
+      <option value="page-width">Page width</option>
+      <option value="page-fit">Whole page</option>
+      <option value="0.75">75%</option>
+      <option value="1">100%</option>
+      <option value="1.25">125%</option>
+      <option value="1.5">150%</option>
+      <option value="2">200%</option>
+      <option value="custom" hidden></option>
+    </select>
+    <button id="zoomIn" class="icon" title="Zoom in (Ctrl +)" aria-label="Zoom in">
+      <svg viewBox="0 0 20 20"><path d="M5 10h10M10 5v10"/></svg></button>
+  </div>
+  <div class="group right">
+    <div class="find">
+      <input id="findInput" type="search" placeholder="Find in book" aria-label="Find in book" autocomplete="off">
+      <span id="findCount" class="muted"></span>
+    </div>
+    <span id="readMark" class="readmark" hidden title="You've read this page">
+      <svg viewBox="0 0 20 20"><path d="M4.5 10.5 8 14l7.5-8"/></svg>Read</span>
+    <button id="askBtn" class="pill" aria-pressed="false">Ask</button>
+    <button id="quizBtn" class="pill" aria-pressed="false">Quiz me</button>
+  </div>
+</header>
+
+<main>
+  <nav id="outline" hidden aria-label="Contents"></nav>
+  <div id="viewerWrap">
+    <div id="viewerContainer" tabindex="-1"><div id="viewer" class="pdfViewer"></div></div>
+    <div id="loading">Opening the book…</div>
+  </div>
+  <aside id="panel" hidden>
+    <div class="tabs" role="tablist">
+      <button role="tab" data-tab="ask" aria-selected="true">Ask</button>
+      <button role="tab" data-tab="quiz" aria-selected="false">Quiz</button>
+      <button id="closePanel" class="icon" title="Close" aria-label="Close panel">
+        <svg viewBox="0 0 20 20"><path d="M5 5l10 10M15 5 5 15"/></svg></button>
+    </div>
+
+    <section id="askTab" class="tab">
+      <div id="thread">
+        <p class="hint">Ask about anything you've read. Answers only use pages you've read, so nothing gets spoiled.
+          To ask about a passage, select it on the page.</p>
+      </div>
+      <form id="askForm">
+        <div id="selChip" class="chip quote" hidden><span></span>
+          <button type="button" class="icon small" aria-label="Remove selection">
+            <svg viewBox="0 0 20 20"><path d="M6 6l8 8M14 6l-8 8"/></svg></button></div>
+        <div class="row">
+          <textarea id="askInput" rows="2" placeholder="Ask about what you've read…"></textarea>
+          <button type="submit" class="primary">Ask</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="quizTab" class="tab" hidden>
+      <div class="quizhead">
+        <label>Questions from
+          <select id="quizScope">
+            <option value="chapter">this chapter</option>
+            <option value="all">everything I've read</option>
+          </select></label>
+        <span id="quizCount" class="muted"></span>
+      </div>
+      <div id="quizCard"></div>
+    </section>
+
+    <footer id="progress">
+      <span id="progressText" class="muted"></span>
+      <button id="progressBtn" class="icon small" title="Reading history" aria-label="Reading history" aria-expanded="false">
+        <svg viewBox="0 0 20 20"><circle cx="5" cy="10" r="1"/><circle cx="10" cy="10" r="1"/><circle cx="15" cy="10" r="1"/></svg></button>
+      <div id="progressMenu" class="menu" hidden>
+        <button id="markBtn">I've read up to this page</button>
+        <button id="resetBtn" class="danger">Forget my reading history</button>
+      </div>
+    </footer>
+  </aside>
+</main>
+
+<button id="askSel" class="floating" hidden>Ask about this</button>
+
+<script type="module" src="/static/reader.js"></script>
+</body>
+</html>

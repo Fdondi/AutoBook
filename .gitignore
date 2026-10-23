@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+tools/venvs/
+tools/node_modules/
+build/
+out/
+learner/
+logs/
+
+.env

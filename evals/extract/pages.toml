@@ -1,0 +1,32 @@
+# Hard-page set for the extraction bake-off (0-based PDF page indices).
+# Frozen: change only with a note on why.
+
+[mr]
+pages = [
+  20,   # 1 Preview: prose + figure
+  87,   # 3.2.1 Rotation matrices: definitions, 2x2 matrices, footnote
+  99,   # 3.2.3 Exponential coordinates of rotation
+  116,  # 3.3.2 Twists
+  130,  # 3.6 Software: code signatures + math
+  140,  # 3.8 Exercises: numbered exercises with matrices
+  173,  # 4.2 URDF: XML code listing
+  196,  # 5.1.1 Space Jacobian: dense math
+  201,  # 5.1.2 Body Jacobian: densest page in the book
+  302,  # 8.2.1 Lagrangian dynamics
+  485,  # 12.1.3 Multiple contacts: math + prose
+  583,  # Appendix A: formula summary tables
+]
+
+[fob]
+pages = [
+  30,   # 1.x figure-heavy prose
+  76,   # 2.8 Quiz
+  107,  # 4.4 OOP: Python listing
+  148,  # 6.3.3 vector/matrix operations + code
+  156,  # 6.4.2 2D/3D rotations
+  274,  # 9.7.2 EKF derivation
+  288,  # 10.x inverse kinematics
+  306,  # 10 chapter summary (math-heavy)
+  430,  # 14.3.2 table with symbols
+  509,  # 17.3.4 long code listing
+]

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "katex": "^0.16.22",
+    "pdfjs-dist": "6.4.299"
+  }
+}

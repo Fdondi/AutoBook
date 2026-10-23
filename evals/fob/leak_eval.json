@@ -1,0 +1,1273 @@
+{
+  "stats": {
+    "traps": 59,
+    "leaked_answers": 6,
+    "leak_rate": 0.1017,
+    "threshold": 0.05,
+    "pass": false,
+    "answer_kinds": {
+      "generated": 13,
+      "qa": 0,
+      "forward": 46,
+      "fallback": 0
+    },
+    "checker_caught": 1,
+    "median_ttft_s": 0.36
+  },
+  "answers": [
+    {
+      "concept": "type-ii-error",
+      "name": "Type-II error",
+      "seen_through": "fob:6.7.3-01",
+      "question": "What if the two groups actually come from different populations, but our test fails to detect that difference and we conclude they’re the same?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 189,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "trilateration",
+      "name": "trilateration",
+      "seen_through": "fob:9.3.4-01",
+      "question": "If we know the exact distances from the robot to several landmarks with known positions, instead of just the angles, how can we determine the robot’s location using only those distances?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 269,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "director-intellectual-property-and-innovation",
+      "name": "Director, Intellectual Property and Innovation",
+      "seen_through": "fob:15.1-01",
+      "question": "Who is responsible for overseeing the protection and management of new inventions and creative works within an organization that develops advanced machine learning technologies?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 475,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "front-light",
+      "name": "front lights",
+      "seen_through": "fob:18.6.1-01",
+      "question": "What should I do when the lights on the front of the Dingo change to white?",
+      "kind": "generated",
+      "text": "When the front lights on the Dingo change to white, you should turn on the Gen3 Lite remote (button on the back of the arm base) [fob:18.4.6-01] or the Gen3 Lite remote (button on the back on the base of the arm) [fob:18.5.2-01]. This indicates that the robot is ready for manual control or operation.",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.23,
+      "seen_ordinal": 592,
+      "drew_on": [
+        "fob:18.5.2-01",
+        "fob:18.4.6-01",
+        "fob:18.1.1-01",
+        "fob:18.2.4-01",
+        "fob:18.5.5-01"
+      ],
+      "leaked": [
+        {
+          "id": "gen3-lite-remote",
+          "evidence": "When the front lights on the Dingo change to white, you should turn on the Gen3 Lite remote (button on the back of the arm base) [fob:18.4.6-01] or the Gen3 Lite remote (button on the back on the base of the arm) [fob:18.5.2-01]."
+        },
+        {
+          "id": "front-light",
+          "evidence": "When the front lights on the Dingo change to white, you should turn on the Gen3 Lite remote (button on the back of the arm base) [fob:18.4.6-01] or the Gen3 Lite remote (button on the back on the base of the arm) [fob:18.5.2-01]."
+        },
+        {
+          "id": "home-position",
+          "evidence": "This indicates that the robot is ready for manual control or operation."
+        }
+      ]
+    },
+    {
+      "concept": "designerly-way-of-thinking",
+      "name": "designerly way of thinking",
+      "seen_through": "fob:2.7-02",
+      "question": "How can students and teachers together shape learning experiences in a way that reflects real-world practices and helps students develop their professional identity?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 75,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "user-journey-mapping",
+      "name": "user journey mapping",
+      "seen_through": "fob:3.3.1-03",
+      "question": "How can we visualize the entire experience of a user interacting with a service from start to finish, based on what we’ve learned about their needs and challenges?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 90,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "absolute-import",
+      "name": "absolute import",
+      "seen_through": "fob:4.5-01",
+      "question": "When I import a module from a different directory, how does Python know which one I mean if there are multiple modules with the same name?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 112,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "loop",
+      "name": "loop",
+      "seen_through": "fob:6.3.3-06",
+      "question": "When you have a set of lines or vectors that form a closed path, is there a way to describe the area they enclose using the same kind of mathematical tools we use for vectors and matrices?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 166,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "sendtransform",
+      "name": "sendTransform",
+      "seen_through": "fob:5.5.3-01",
+      "question": "How can I make sure that the robot's position and orientation are correctly shared with other parts of the system when I replay sensor data from a bag file?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 141,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "batch-size",
+      "name": "batch size",
+      "seen_through": "fob:15.4.3-02",
+      "question": "When updating the model parameters using gradient descent, how many data points are typically used to compute each gradient step?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 483,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "communication-topology-in-robot-swarm",
+      "name": "communication topology in robot swarms",
+      "seen_through": "fob:11.6-01",
+      "question": "Why does the way robots are connected for communication matter when they’re working together as a group?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 358,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "separation",
+      "name": "separation",
+      "seen_through": "fob:11.4.2-03",
+      "question": "How does the system determine how robots should move apart from each other when they get too close in a group?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 349,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "second-newtons-law",
+      "name": "second Newton’s law",
+      "seen_through": "fob:10/kinematics-of-parallel-manipulators/singularities-01",
+      "question": "Why can't the end-effector move in certain directions even when the joints are being driven, and what happens to the forces or motions when the system reaches a configuration where small joint movements lead to unpredictable or uncontrollable end-effector behavior?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 317,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "process-of-inquiry",
+      "name": "process of inquiry",
+      "seen_through": "fob:3.2-01",
+      "question": "How does design thinking help people move from not knowing how to solve a problem to finding a solution, especially when the problem isn’t clear at first?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 81,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "hybrid-approach",
+      "name": "hybrid approach",
+      "seen_through": "fob:12.5-01",
+      "question": "Why do some CAD systems combine both parametric and direct modelling, even though each approach has its own strengths and weaknesses?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 371,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "ansi-itsdf-b565",
+      "name": "ANSI/ITSDF B56.5",
+      "seen_through": "fob:14.3.2-01",
+      "question": "What safety requirements apply specifically to automated guided vehicles that don’t have a manipulator attached, based on the standard mentioned in the chart from ANSI/RIA R15.08?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 451,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "cognitive-robotics",
+      "name": "cognitive robotics",
+      "seen_through": "fob:2.4.1-01",
+      "question": "How can we design robotics education that effectively brings together different areas of knowledge—like mechanical design, programming, and real-world experimentation—so that students from various backgrounds can learn together and apply what they’ve learned in meaningful, integrated ways?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 58,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "dropout",
+      "name": "dropout",
+      "seen_through": "fob:15.4.3-04",
+      "question": "Why does the model's performance on the validation set start to degrade even though it's still improving on the training set?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 485,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "steady-state",
+      "name": "steady state",
+      "seen_through": "fob:8.3.3-03",
+      "question": "After a quadcopter reaches a certain altitude and maintains a constant position in the air without moving or rotating, what is the condition called when its motion and forces are balanced and unchanging over time?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 245,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "electron-beam",
+      "name": "electron beam",
+      "seen_through": "fob:12.11-01",
+      "question": "Why can't some manufacturing processes, like those involving high-energy beams, work in regular air?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 384,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "reading-a-technical-drawing",
+      "name": "Reading a Technical Drawing",
+      "seen_through": "fob:12.8-02",
+      "question": "How do you figure out how all the individual parts in a product fit together just by looking at the separate drawings for each part?",
+      "kind": "generated",
+      "text": "The separate drawings for each part do not show how the parts fit together directly. To understand the fit between parts, the assembly drawing is required, which shows the product in its assembled form and illustrates how all parts align and connect [fob:12.8-01]. While individual part drawings contain detailed dimensions and features, they are designed to be used independently for manufacturing and do not inherently convey the assembly relationships [fob:12.8-02]. Therefore, the assembly drawing is essential for visualising the fit and assembly sequence.",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.34,
+      "seen_ordinal": 379,
+      "drew_on": [
+        "fob:12.8-01",
+        "fob:12.8-02",
+        "fob:12.3-02",
+        "fob:12.7-01",
+        "fob:12.7-04"
+      ],
+      "leaked": [
+        {
+          "id": "assembly-sheet",
+          "evidence": "To understand the fit between parts, the assembly drawing is required, which shows the product in its assembled form and illustrates how all parts align and connect [fob:12.8-01]."
+        },
+        {
+          "id": "parts-list",
+          "evidence": "While individual part drawings contain detailed dimensions and features, they are designed to be used independently for manufacturing and do not inherently convey the assembly relationships [fob:12.8-02]."
+        },
+        {
+          "id": "exploded-cad-model",
+          "evidence": "The model can also be exploded to check how the parts fit together (see Image 6) and exploded to see all the parts (see Image 7)."
+        },
+        {
+          "id": "section-view",
+          "evidence": "The model can also be sectioned to check how the parts fit together (see Image 6) and exploded to see all the parts (see Image 7)."
+        },
+        {
+          "id": "shaded-perspective-view",
+          "evidence": "Also seen on Image 10 is a shaded perspective view of the part that is useful for visualising what the parts looks like."
+        },
+        {
+          "id": "3d-cad-model",
+          "evidence": "The model can also be sectioned to check how the parts fit together (see Image 6) and exploded to see all the parts (see Image 7)."
+        }
+      ]
+    },
+    {
+      "concept": "positional-relationship-validation",
+      "name": "positional relationship validation",
+      "seen_through": "fob:17.2.3-01",
+      "question": "After setting up the robot leg's joint angles and calculating the foot position using the DH parameters, how can we be sure that the resulting foot position is physically possible given the mechanical constraints of the leg's structure?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 546,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "curriculum-design-principle",
+      "name": "curriculum design principles",
+      "seen_through": "fob:2.2-02",
+      "question": "How can a course be structured to support students in building knowledge not just through instruction, but through active engagement and collaboration, especially when learning spans multiple disciplines?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 54,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "flight-controller",
+      "name": "flight controller",
+      "seen_through": "fob:8.3.2-03",
+      "question": "How does a multicopter stay balanced in the air without falling over, especially when it’s not designed like a plane with wings to naturally stay stable?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 242,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "environment-mediated-control",
+      "name": "environment mediated control",
+      "seen_through": "fob:11.5.1-01",
+      "question": "How can a human operator effectively influence a large group of robots without having to directly control each one individually, especially when the system becomes too complex to manage through direct commands?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 353,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "brushless-motor",
+      "name": "brushless motor",
+      "seen_through": "fob:7.5-01",
+      "question": "What kind of motor is better for robots because it lasts longer, uses less energy, and makes less noise?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 219,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "arrow-s-impossibility-theorem",
+      "name": "Arrow's impossibility theorem",
+      "seen_through": "fob:11.3.2-03",
+      "question": "Is it possible to design a voting system that fairly combines everyone's preferences into a group decision, without any single person having complete control, when there are three or more options to choose from?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 337,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "version-control",
+      "name": "version control",
+      "seen_through": "fob:4.7.1-01",
+      "question": "How can you keep track of changes to your code when you're experimenting with converting MATLAB scripts to Python, especially when you might want to go back to an earlier version if something goes wrong?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 115,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "types-of-gait-for-four-legged-robot",
+      "name": "Types of Gait for Four-Legged Robots",
+      "seen_through": "fob:8.3.2-01",
+      "question": "What determines whether a four-legged robot can maintain balance while moving, especially on uneven ground?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 240,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "fig-187",
+      "name": "Fig. 18.7",
+      "seen_through": "fob:18.4.4-01",
+      "question": "How do the individual joint frames relate to each other in terms of position and orientation when building the overall robot arm configuration?",
+      "kind": "generated",
+      "text": "The individual joint frames are related through the Denavit-Hartenberg (DH) parameters, which define the relative position and orientation between consecutive joint frames. Specifically, the axes of the second and third joints are parallel, and the axes of the first and fourth joints are orthogonal to those of the second and third joints. Additionally, the axis of the fifth joint is orthogonal to the axes of the fourth and sixth joints. These geometric relationships determine how the joint frames are aligned and contribute to the overall configuration of the robot arm. [fob:10/kinematics-of-serial-manipulators/singularities-03]",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.39,
+      "seen_ordinal": 583,
+      "drew_on": [
+        "fob:10/kinematics-of-serial-manipulators/inverse-kinematics-01",
+        "fob:10/kinematics-of-serial-manipulators/singularities-03",
+        "fob:17.4.2-01",
+        "fob:8.3.3-02",
+        "fob:17.2.3-01"
+      ],
+      "leaked": [
+        {
+          "id": "fig-187",
+          "evidence": "The individual joint frames are related through the Denavit-Hartenberg (DH) parameters, which define the relative position and orientation between consecutive joint frames."
+        }
+      ]
+    },
+    {
+      "concept": "binary-representation",
+      "name": "binary representation",
+      "seen_through": "fob:17.5.1-01",
+      "question": "How does a sequence of 1s and 0s in a computer actually represent different numbers, like how a byte can store values from 0 to 255?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 558,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "motion-noise",
+      "name": "motion noise",
+      "seen_through": "fob:9.6-01",
+      "question": "Why does the estimated state in the Kalman filter sometimes deviate from the true state, even when the model and measurements seem accurate?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 278,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "swarmexec",
+      "name": "swarm.exec",
+      "seen_through": "fob:11.4.2-03",
+      "question": "How can I make a group of robots perform a specific task together, like having them all execute the same custom behavior at the same time?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 349,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "discount-factor",
+      "name": "discount factor",
+      "seen_through": "fob:15.5.2-01",
+      "question": "Why do we sometimes prioritize immediate rewards over future ones when training an agent, and how does that affect its long-term decision-making?",
+      "kind": "generated",
+      "text": "The provided passages do not discuss reward prioritization, immediate versus future rewards, or how such choices affect long-term decision-making in agent training. Therefore, this question cannot be answered based on the given material.",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.37,
+      "seen_ordinal": 497,
+      "drew_on": [
+        "fob:15.5.2-01",
+        "fob:7.2-02",
+        "fob:15.4.3-04",
+        "fob:13.6.4-02",
+        "fob:1.8-01",
+        "fob:13.6.4-01"
+      ],
+      "leaked": []
+    },
+    {
+      "concept": "statistically",
+      "name": "statistically",
+      "seen_through": "fob:13.7.3-03",
+      "question": "How do you know whether the difference you see in your sample data is likely to reflect a real difference in the broader population, or just happened by chance?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 434,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "task-oriented-programming",
+      "name": "task-oriented programming",
+      "seen_through": "fob:11.4.1-01",
+      "question": "How can we design a system where robots work together to achieve a larger goal without having to program each robot individually, while still making sure the overall task gets done efficiently?",
+      "kind": "generated",
+      "text": "We can design such a system using a decentralized architecture, where each robot independently makes decisions based on local information and interactions with other robots [fob:11.3-01]. In this setup, the overall goal is decomposed into smaller sub-problems, and individual robots are assigned tasks to solve them, with task allocation (MRTA) ensuring optimal performance [fob:11.3-02]. The system relies on robot-oriented programming to define behaviors, but these behaviors are designed to synchronize collectively, enabling emergent group behavior without individual programming [fob:11.4.1-01]. This approach allows efficient task execution because each robot operates autonomously while contributing to a shared objective, leveraging the perception-action loop to guide actions toward the final state [fob:8.4-01].",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.36,
+      "seen_ordinal": 345,
+      "drew_on": [
+        "fob:11.3.3-05",
+        "fob:11.3-02",
+        "fob:11.3.3-01",
+        "fob:11.4.1-01",
+        "fob:11.3-01",
+        "fob:8.4-01"
+      ],
+      "leaked": [
+        {
+          "id": "subtask",
+          "evidence": "In this setup, the overall goal is decomposed into smaller sub-problems, and individual robots are assigned tasks to solve them, with task allocation (MRTA) ensuring optimal performance [fob:11.3-02]."
+        },
+        {
+          "id": "task-oriented-programming",
+          "evidence": "In this setup, the overall goal is decomposed into smaller sub-problems, and individual robots are assigned tasks to solve them, with task allocation (MRTA) ensuring optimal performance [fob:11.3-02]."
+        },
+        {
+          "id": "bottom-up-programming",
+          "evidence": "This approach allows efficient task execution because each robot operates autonomously while contributing to a shared objective, leveraging the perception-action loop to guide actions toward the final state [fob:8.4-01]."
+        },
+        {
+          "id": "perception-action-communication-loop",
+          "evidence": "This approach allows efficient task execution because each robot operates autonomously while contributing to a shared objective, leveraging the perception-action loop to guide actions toward the final state [fob:8.4-01]."
+        },
+        {
+          "id": "empathetic-thinking",
+          "evidence": "This approach allows efficient task execution because each robot operates autonomously while contributing to a shared objective, leveraging the perception-action loop to guide actions toward the final state [fob:8.4-01]."
+        }
+      ]
+    },
+    {
+      "concept": "convolution",
+      "name": "convolution",
+      "seen_through": "fob:15.4.5-01",
+      "question": "How does a neural network process local patterns in an image, like edges or textures, by combining information from nearby pixels in a way that’s efficient and reusable across different parts of the image?",
+      "kind": "generated",
+      "text": "The provided passages do not describe how a neural network processes local patterns in an image, such as edges or textures, by combining information from nearby pixels. While it is mentioned that nonlinear activation functions, like ReLUs, make deep neural networks more powerful and that the universal approximation theorem supports their ability to model complex functions [fob:15.4.4-02], there is no explanation of the specific mechanisms for processing local image patterns or pixel combinations. Additionally, no passage discusses the internal structure or operations that enable efficient and reusable processing of local features like edges or textures. Therefore, the question cannot be answered based on the given passages.",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.38,
+      "seen_ordinal": 489,
+      "drew_on": [
+        "fob:15.4.4-02",
+        "fob:11.3.3-03",
+        "fob:11.3.3-04",
+        "fob:15.4.3-03",
+        "fob:7.6.2-01",
+        "fob:15.4.5-01"
+      ],
+      "leaked": []
+    },
+    {
+      "concept": "contextual-design",
+      "name": "contextual design",
+      "seen_through": "fob:16.7.3-01",
+      "question": "How do we make sure a technology like a drone or robot actually works well in the real-world situations it’s meant to support, rather than just functioning in theory?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 527,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "control-architecture",
+      "name": "control architecture",
+      "seen_through": "fob:11.5.1-01",
+      "question": "How does the way an operator interacts with a swarm of robots affect their ability to manage the system effectively as the number of robots increases?",
+      "kind": "generated",
+      "text": "As the number of robots in a swarm increases, the operator's cognitive complexity grows due to the increasing volume and scatter of incoming information, which are often delayed, asynchronous, or unreliable [fob:11.5.1-01]. This heightened cognitive load challenges the operator's ability to maintain situational awareness, detect problems, and make effective decisions [fob:11.5.1-01]. The operator's interaction with the swarm is closely tied to the level of autonomy and communication, as more autonomous robots generate more complex and scattered data, increasing the effort required to supervise and manage the system [fob:11.5.1-01]. Thus, as the swarm size grows, the operator's effectiveness diminishes unless the communication and control architectures are designed to reduce information overload and support efficient supervision [fob:11.5.1-01].",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.37,
+      "seen_ordinal": 353,
+      "drew_on": [
+        "fob:11.5.1-01",
+        "fob:11.2-02",
+        "fob:11.3.3-02"
+      ],
+      "leaked": [
+        {
+          "id": "cognitive-complexity",
+          "evidence": "The operator's interaction with the swarm is closely tied to the level of autonomy and communication, as more autonomous robots generate more complex and scattered data, increasing the effort required to supervise and manage the system [fob:11.5.1-01]."
+        },
+        {
+          "id": "level-of-autonomy",
+          "evidence": "The operator's interaction with the swarm is closely tied to the level of autonomy and communication, as more autonomous robots generate more complex and scattered data, increasing the effort required to supervise and manage the system [fob:11.5.1-01]."
+        },
+        {
+          "id": "communication-with-the-swarm",
+          "evidence": "The operator's interaction with the swarm is closely tied to the level of autonomy and communication, as more autonomous robots generate more complex and scattered data, increasing the effort required to supervise and manage the system [fob:11.5.1-01]."
+        },
+        {
+          "id": "control-architecture",
+          "evidence": "Thus, as the swarm size grows, the operator's effectiveness diminishes unless the communication and control architectures are designed to reduce information overload and support efficient supervision [fob:11.5.1-01]."
+        }
+      ]
+    },
+    {
+      "concept": "deliver-stage",
+      "name": "Deliver stage",
+      "seen_through": "fob:3.2.3-02",
+      "question": "How do you move from a prototype that works in theory to a version that can actually be built and sold at scale, especially when you’re balancing cost, time, and performance?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 86,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "moveit",
+      "name": "MoveIt!",
+      "seen_through": "fob:5-01",
+      "question": "How does a robot plan its movements in a complex environment using ROS, especially when it needs to avoid obstacles and reach a specific target?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 126,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "architecture",
+      "name": "architecture",
+      "seen_through": "fob:10/learning-objectives-01",
+      "question": "What determines the different ways a robot arm can move and where it can reach, based on its structure?",
+      "kind": "generated",
+      "text": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics. Kinematics examines the motions of points, bodies, and systems of bodies without considering forces, and it helps understand how movements generated by actuators translate into complex body movements [fob:8.3.1-01]. This structural and geometric analysis is essential for designing robot arms that can reach specific poses in space. While the passage does not specify the exact mathematical models, it establishes that the arm's structure directly influences its motion and reachability.",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.32,
+      "seen_ordinal": 292,
+      "drew_on": [
+        "fob:8.4-01",
+        "fob:8.2-01",
+        "fob:8.7-01",
+        "fob:5.6.2-01",
+        "fob:7.5-01",
+        "fob:8.3.1-01"
+      ],
+      "leaked": [
+        {
+          "id": "kinematics",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "direct-kinematics-problem",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "forward-kinematics",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "position-relationship",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "velocity-relationship",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "dynamics",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "joint-link-pair-structure",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "rigid-body",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "serial-link-robot",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "parallel-structure",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "architecture",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "mobility",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "denavit-hartenberg-convention",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "kinematic-diagram",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "wrist-partitioned",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "spherical-wrist",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "elbow-singularity",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "singularities-with-a-non-wrist-partitioned-manipulator",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "singularity-of-the-position-jacobian",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "non-linearity",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "loss-of-mobility",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "boundary",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "kinematically-redundant",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "delta",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "pantograph",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "differential-drive-kinematics",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "inverse-kinematic-equation",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "inverse-orientation-kinematics",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "wrist-position",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "d-coefficient-in-inverse-kinematics",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "e-coefficient-in-inverse-kinematics",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "actuator-position",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "actuator-velocity",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "torques-exerted-by-actuator",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "actuator-strength",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "tracking-the-position-velocity",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "handling-collisions-while-walking",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "power-and-force-limiting",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "tolerance",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "home-position",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "robots-position",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "robots-frame",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "z-axis",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "cad",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "survey-design",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "user-study",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "speed-and-separation-monitoring",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "perception-action-communication-loop",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "swarm-robotics-design-problem",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "research-question",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "euler-lagrange-method",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "newton-euler-method",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "geometric-jacobian",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "dynamics-relationship",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "velocities-and-acceleration",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "robotic-system",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        },
+        {
+          "id": "shall",
+          "evidence": "The different ways a robot arm can move and where it can reach are determined by its structural design and the geometric relationships of motion, which are studied in kinematics."
+        }
+      ]
+    },
+    {
+      "concept": "actuator-strength",
+      "name": "actuator strength",
+      "seen_through": "fob:17.2.2-01",
+      "question": "What limits how well the hexapod can maintain its intended motion when encountering resistance, like pushing against a surface or navigating uneven terrain?",
+      "kind": "generated",
+      "text": "The hexapod's ability to maintain its intended motion when encountering resistance or navigating uneven terrain is limited by its centre of gravity and the polygon of stability, which is defined by the leg-ground contact points [fob:8.3.2-01]. The robot's six legs, each with four degrees of freedom, allow it to adjust its posture and centre of gravity, enhancing static stability on uneven terrain [fob:12.13-03]. However, if resistance is significant, the robot may struggle to maintain balance or adjust its gait dynamically, especially since the initial design uses a tripod gait that alternates three legs on the ground and three in the air [fob:17.2.2-01]. While the modular and radial symmetrical design allows for flexibility, the system's performance is ultimately constrained by the physical limits of its leg structure and the need to keep the centre of gravity within the polygon of stability [fob:8.3.2-01].",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.37,
+      "seen_ordinal": 545,
+      "drew_on": [
+        "fob:12.13-03",
+        "fob:12.13-02",
+        "fob:8.3.2-01",
+        "fob:17.2.2-01",
+        "fob:8.3.1-01",
+        "fob:12.13-04"
+      ],
+      "leaked": []
+    },
+    {
+      "concept": "technical-drawing-orthographic-projection",
+      "name": "Technical Drawing Orthographic Projections",
+      "seen_through": "fob:12.8-02",
+      "question": "How does a technical drawing show all the necessary details of a part from different angles without needing to refer to the assembly or another drawing?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 379,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "interactive-tool",
+      "name": "interactive tool",
+      "seen_through": "fob:2.4.5-01",
+      "question": "How can students interact with the robot simulations in a way that feels more like playing a game while still learning how to design and control robots?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 62,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "cross-entropy",
+      "name": "cross-entropy",
+      "seen_through": "fob:15.3-02",
+      "question": "When training a neural network to classify images, how do we measure how well the model's predicted probabilities match the actual correct labels, especially when the model is confident but wrong?",
+      "kind": "generated",
+      "text": "The passages do not describe how to evaluate whether a model's predicted probabilities match actual labels, especially when the model is confident but incorrect. While they mention classification outputs as probability vectors [fob:15.3-01], they do not explain any method for assessing the accuracy of these predictions. Thus, the evaluation of model performance in such cases is not covered in the provided passages.",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 2,
+      "ttft_s": 0.21,
+      "seen_ordinal": 479,
+      "drew_on": [
+        "fob:15.3-01",
+        "fob:6.7.3-02",
+        "fob:9.5.1-02"
+      ],
+      "leaked": []
+    },
+    {
+      "concept": "fixed-wing-aircraft",
+      "name": "fixed-wing aircraft",
+      "seen_through": "fob:16.9-01",
+      "question": "What kind of drone design would allow for reliable and timely delivery of blood samples across the water between the island of Ærø and the mainland, especially considering the need for consistent scheduling and the challenges of weather and limited infrastructure?",
+      "kind": "generated",
+      "text": "The passages do not describe any specific drone design for reliable and timely delivery of blood samples between Ærø and the mainland. While it is noted that current deliveries rely on a ferry and take several hours, and that a prototype fixed-wing drone has been developed for rapid delivery in a public healthcare context [fob:16.8.4-01], no details are provided about how such a drone would address weather challenges, infrastructure limitations, or ensure consistent scheduling. Therefore, based on the given passages, no concrete drone design is specified.",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.36,
+      "seen_ordinal": 534,
+      "drew_on": [
+        "fob:16.9-01",
+        "fob:16.8.4-01",
+        "fob:16.2-01",
+        "fob:16.4.1-01"
+      ],
+      "leaked": []
+    },
+    {
+      "concept": "unobtrusive-measure",
+      "name": "unobtrusive measures",
+      "seen_through": "fob:13.6.4-02",
+      "question": "What if you want to study how people behave in a classroom without them changing their behavior just because they know they're being watched or tested?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 427,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "sensing",
+      "name": "sensing",
+      "seen_through": "fob:1.5-03",
+      "question": "How did the Unimate robot know when to stop moving or adjust its position during tasks like picking up heavy parts, especially since it had to work reliably in a factory setting without constant human supervision?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 29,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "pixel-resolution",
+      "name": "pixel resolution",
+      "seen_through": "fob:7.3.2-02",
+      "question": "How does the number of tiny dots in a camera image affect how detailed the picture appears?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 214,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "full-autonomy",
+      "name": "full autonomy",
+      "seen_through": "fob:11.4.2-05",
+      "question": "How do the robots in the swarm ensure that all of them eventually have the same information, even when they're only communicating with nearby neighbors?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 351,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "global-positioning-problem",
+      "name": "global positioning problem",
+      "seen_through": "fob:9.2-02",
+      "question": "How do you handle the problem of not knowing where a UAV starts when it’s operating in an environment without GPS, especially when you can’t afford to make mistakes during testing?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 264,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "emergent-behavior",
+      "name": "emergent behavior",
+      "seen_through": "fob:1.6-01",
+      "question": "Why do some robotic systems display complex, coordinated actions that weren't explicitly programmed, even though each individual part follows simple rules?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 30,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "determinant-of-orthogonal-matrix",
+      "name": "determinant of orthogonal matrix",
+      "seen_through": "fob:6.2-01",
+      "question": "Why does rotating a 3D object not change its volume, even though the positions of points on the object are transformed?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 156,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "state-machine",
+      "name": "state machine",
+      "seen_through": "fob:11.3.3-04",
+      "question": "How does the control software for a swarm of robots decide what to do next based on its current situation and past actions?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 342,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "elevator",
+      "name": "elevator",
+      "seen_through": "fob:8.3.3-02",
+      "question": "How does the drone adjust its pitch to move forward or backward without changing its altitude?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 244,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "dynamically-stable",
+      "name": "dynamically stable",
+      "seen_through": "fob:8.3.2-01",
+      "question": "How do robots maintain balance while walking or running, especially when their motion is continuous and they’re moving at speed, without relying solely on static stability?",
+      "kind": "forward",
+      "text": "",
+      "checker": null,
+      "attempts": 0,
+      "ttft_s": null,
+      "seen_ordinal": 240,
+      "drew_on": [],
+      "leaked": []
+    },
+    {
+      "concept": "safety",
+      "name": "safety",
+      "seen_through": "fob:14.1-01",
+      "question": "Why is it important to carefully evaluate how a robot interacts with people in shared spaces, especially when the robot is moving or performing tasks nearby?",
+      "kind": "generated",
+      "text": "The passages do not address why it is important to evaluate how a robot interacts with people in shared spaces, especially during movement or task performance. While they discuss human–robot interaction, ethical issues, and cognitive complexity, none of the provided passages mention shared spaces, robot movement, or task performance in such contexts. Therefore, this question cannot be answered based on the given passages.",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.31,
+      "seen_ordinal": 444,
+      "drew_on": [
+        "fob:11.5.1-02",
+        "fob:13.7.1-01",
+        "fob:13.7.4-02",
+        "fob:13.8-01",
+        "fob:13.3-02",
+        "fob:1.7-01"
+      ],
+      "leaked": []
+    },
+    {
+      "concept": "fig-71",
+      "name": "Fig. 7.1",
+      "seen_through": "fob:7.1-01",
+      "question": "How does a robot go from perceiving its environment to making decisions and then carrying out actions?",
+      "kind": "generated",
+      "text": "The robot perceives its environment through sensors such as cameras, range finders, and bump detectors, which provide input data [fob:1.6.1-03]. This sensory information is processed by the robot's \"brain,\" enabling it to reason about its actions and make decisions based on the available context [fob:1.6.1-03]. These decisions involve evaluating inputs from multiple sources to fulfill a task, such as navigating to a location or pushing an object [fob:1.6.1-03]. For movement, the robot uses path planning algorithms like A* or RRT to compute optimal trajectories in the environment [fob:5.6.2-01]. The robot then carries out these actions through its actuators, such as wheels or motors, based on the decisions made from sensor input [fob:1.6.1-03].",
+      "checker": {
+        "lexical": {},
+        "semantic": []
+      },
+      "attempts": 1,
+      "ttft_s": 0.34,
+      "seen_ordinal": 208,
+      "drew_on": [
+        "fob:1.6.1-03",
+        "fob:5.6.2-01",
+        "fob:1.5-03",
+        "fob:1.1-02",
+        "fob:6.7.6-05"
+      ],
+      "leaked": []
+    }
+  ]
+}

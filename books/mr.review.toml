@@ -1,0 +1,34 @@
+# Manual review of flagged extraction (reports/extraction.md).
+# [[fix]]: exact replacement in a page's final Markdown (old must occur once).
+# [[accept]]: page checked by eye against the PDF; its flags are not errors.
+
+[[fix]]
+page = 45
+old = '$x^2 + y^{2} + z^{2} = 1$ $y^2 + z^2 = 1$'
+new = '$x^2 + y^2 + z^2 = 1$'
+note = "duplicated equation"
+
+[[fix]]
+page = 48
+old = 'the angle of $\text{rotation } \theta$'
+new = 'the angle of rotation $\theta$'
+
+[[fix]]
+page = 101
+old = '$\theta_1 = 30^\circ = 0.524$.'
+new = '$\theta_1 = 30^\circ = 0.524$ rad.'
+note = "unit dropped"
+
+[[fix]]
+page = 101
+old = 'the angle $\theta_1 = 0.524$, i.e.'
+new = 'the angle $\theta_1 = 0.524$ rad, i.e.'
+note = "unit dropped"
+
+[[accept]]
+page = 112
+note = "caption placed after the sentence continued from p. 94: better reading order"
+
+[[accept]]
+page = 138
+note = "$\\hat{x}_s, \\hat{y}_s, \\hat{z}_s$ matches the page"

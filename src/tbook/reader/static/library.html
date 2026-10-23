@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AutoBook Library</title>
+<link rel="stylesheet" href="/static/reader.css">
+</head>
+<body>
+<main>
+  <div class="library">
+    <h1>Your books</h1>
+    <div id="books" class="muted">Loading…</div>
+  </div>
+</main>
+<script type="module">
+const box = document.getElementById("books");
+try {
+  const books = await (await fetch("/api/books")).json();
+  box.replaceChildren(...books.map((b) => {
+    const card = document.createElement(b.ready ? "a" : "div");
+    card.className = "book";
+    if (b.ready) card.href = `/book/${b.id}`;
+    const text = document.createElement("div");
+    const t = document.createElement("div");
+    t.className = "t";
+    t.textContent = b.title;
+    const s = document.createElement("div");
+    s.className = "s";
+    s.textContent = b.authors;
+    text.append(t, s);
+    const status = document.createElement("div");
+    status.className = "s";
+    status.textContent = !b.ready ? "Still being prepared" : b.units_read ? "Continue reading" : "Start reading";
+    card.append(text, status);
+    return card;
+  }));
+  box.classList.remove("muted");
+} catch (err) {
+  box.textContent = `Couldn't load the library: ${err.message}`;
+}
+</script>
+</body>
+</html>

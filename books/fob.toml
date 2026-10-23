@@ -1,0 +1,24 @@
+id = "fob"
+title = "Foundations of Robotics: A Multidisciplinary Approach with Python and ROS"
+authors = "Damith Herath and David St-Onge (eds.)"
+pdf = "Examples/978-981-19-1983-1.pdf"
+license = "CC BY 4.0 (Open Access), Springer 2022"
+
+# Chapter and section numbers are part of the bookmark titles.
+numbering = "title"
+part_titles = '^Part [IVX]+\b'
+front_titles = [
+    "Foreword by Ken Goldberg", "Foreword by Sue Keay", "Preface", "Acknowledgements",
+    "Contents", "Editors and Contributors",
+]
+appendix_titles = []
+back_titles = ["Index"]
+overview_chapters = []
+
+exercise_titles = '^(Exercises|Quiz|Revision Questions|Problems)$'
+reference_titles = '^(Notes and References|References|Bibliography|Index|Further Reading)$'
+# Recaps restate earlier material: nothing is "defined" there.
+recap_titles = '^(Summary|Chapter Summary)$'
+
+math_fonts = '^(CMMI|CMSY|CMEX|MSBM|MSAM|MTMI|MTSY|MTEX|MTSYN)'
+code_fonts = '^(Courier|t1xtt|t1xbtt|CMTT)'
